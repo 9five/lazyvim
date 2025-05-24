@@ -31,14 +31,6 @@ return {
     },
 
     {
-        "kdheepak/lazygit.nvim",
-        cmd = "LazyGit",
-        keys = {
-            { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
-        },
-    },
-
-    {
         "kndndrj/nvim-dbee",
         dependencies = {
             "MunifTanjim/nui.nvim",
@@ -106,7 +98,14 @@ return {
             {
                 ";g",
                 function()
-                    Snacks.lazygit()
+                    Snacks.lazygit({ size = { width = 1.0, height = 1.0 }, esc_esc = true, cwd = LazyVim.root.get() })
+                end,
+                desc = "LazyGit Snacks",
+            },
+            {
+                "<leader>gg",
+                function()
+                    Snacks.lazygit({ size = { width = 1.0, height = 1.0 }, esc_esc = true, cwd = LazyVim.root.get() })
                 end,
                 desc = "LazyGit Snacks",
             },

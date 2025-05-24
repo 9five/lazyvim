@@ -44,7 +44,6 @@ map("n", "<C-.>", vim.diagnostic.goto_prev)
 -- Plugins
 map("n", ";s", ":Spectre<CR>", { desc = "Spectre" })
 map("n", ";d", ":lua require('dbee').open()<CR>", { desc = "Dbee" })
-map("n", ";g", ":LazyGit<CR>", { desc = "LazyGit" })
 map("n", ";-", "<cmd>Oil<cr>", { desc = "Oil" })
 
 -- Delete Default Keymaps
