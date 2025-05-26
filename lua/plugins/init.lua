@@ -1,15 +1,5 @@
 return {
     {
-        "navarasu/onedark.nvim",
-        config = function()
-            require("onedark").setup({
-                style = "dark",
-            })
-            require("onedark").load()
-        end,
-    },
-
-    {
         "ray-x/lsp_signature.nvim",
         event = "BufRead",
         config = function()
